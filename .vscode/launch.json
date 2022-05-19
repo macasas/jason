@@ -1,0 +1,86 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Launch Program",
+            // "program": "/usr/local/lib/node_modules/@jovotech/cli/bin/run",
+            // "program": "/usr/local/bin/jovo",
+            "args": ["run"],
+            "console": "externalTerminal",
+            "autoAttachChildProcesses": true,
+            "runtimeExecutable": "/usr/local/lib/node_modules/@jovotech/cli/bin/run",
+
+        },
+        // {
+        //     "type": "node",
+        //     "request": "launch",
+        //     "name": "Unused Program",
+        //     "program": "/usr/local/lib/node_modules/@jovotech/cli/bin/run",
+        //     "args": [
+        //         "run",
+        //         "--inspect=9229"
+        //     ],
+        //     "port": 9229,
+        //     "console": "externalTerminal",
+        //     "sourceMap": true,
+        //     "skipFiles" : [
+        //         "<node_internals>/**"
+        //     ],
+        //     "autoAttachChildProcesses": true,
+        // },
+        // {
+        //     "type": "node",
+        //     "request": "launch",
+        //     "name": "Debug",
+        //     "program3": "/usr/local/bin/jovo",
+        //     "program": "${workspaceFolder}/index.js",
+        //     "runtimeExecutable": "${workspaceFolder}/node_modules/.bin/babel-node",
+        //     "runtimeArgs": [
+        //         "--nolazy"
+        //     ],
+        //     // "program2": "${workspaceFolder}/node_modules/.bin/jovo",
+        //     // "program3": "${workspaceFolder}/node_modules/@jovotech/cli/bin/run",
+        //     // "localRoot": "${workspaceFolder}/",
+        //     "args": [
+        //         "run"
+        //         // "--inspect=9229"
+        //     ],
+        //     "outFiles": [
+        //         "${workspaceFolder}/dist/*.js"
+        //     ],
+        //     "port":9229,
+        //     "autoAttachChildProcesses": true,
+        //     "console": "externalTerminal",
+        //     "sourceMaps": true
+        // },
+        // {
+        //     'LOGNAME=dave' 
+        //     'PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin' 
+        //     'XPC_SERVICE_NAME=com.apple.xpc.launchd.oneshot.0x10000003.Electron' 
+        //     'COMMAND_MODE=unix2003' 
+        //     'USER=dave' 
+        //     'SECURITYSESSIONID=186a8' 
+        //     'XPC_FLAGS=0x0' 
+        //     'ORIGINAL_XDG_CURRENT_DESKTOP=undefined' 
+        //     'PWD=/' 
+        //     'SHLVL=1' 
+        //     '_=/Applications/Visual Studio Code.app/Contents/MacOS/Electron' 
+        //     'APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL=1' 
+        //     'NODE_OPTIONS=
+        //         --require "/Applications/Visual Studio Code.app/Contents/Resources/app/extensions/ms-vscode.js-debug/src/bootloader.bundle.js" 
+        //         --inspect-publish-uid=http' 
+        //     'VSCODE_INSPECTOR_OPTIONS={
+        //         "inspectorIpc":"/var/folders/g0/1639sxps04zddcdz7xtw_h540000gn/T/node-cdp.441-21.sock",
+        //         "deferredMode":false,
+        //         "waitForDebugger":"",
+        //         "execPath":"/usr/local/bin/node",
+        //         "onlyEntrypoint":false,
+        //         "autoAttachMode":"always",
+        //         "fileCallback":"/var/folders/g0/1639sxps04zddcdz7xtw_h540000gn/T/node-debug-callback-d409b3ba4e522b90"
+        //         }
+        //         ' '/usr/local/bin/node' './node_modules/.bin/jovo' 'run'
+        // }
+    ]
+}

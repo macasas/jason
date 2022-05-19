@@ -1,0 +1,9 @@
+node_modules/
+db/
+bundle/
+bundle.zip
+.env
+dist/
+.idea
+src/creds/
+Design/

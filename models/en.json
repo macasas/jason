@@ -1,0 +1,89 @@
+{
+  "invocation": "Jason",
+  "version": "4.0",
+  "intents": {
+    "matchAny": {
+      "phrases": [
+        "let's build a {model} model",
+        "create a new {model} model",
+        "start a new {model} project"
+      ],
+      "entities": {
+        "model": {
+          "type": "MODELS"
+        },
+        "command": {
+          "type": "COMMANDS"
+        }
+      }
+    },
+    "YesIntent": {
+      "phrases": [
+        "yes",
+        "yes please",
+        "sure"
+      ]
+    },
+    "NoIntent": {
+      "phrases": [
+        "no",
+        "no thanks"
+      ]
+    },
+    "CancelIntent": {
+      "phrases": [
+        "cancel",
+        "goodbye"
+      ]
+    },
+    "RepeatIntent": {
+      "phrases": [
+        "repeat",
+        "repeat that",
+        "say it again"
+      ]
+    },
+    "StartOverIntent": {
+      "phrases": [
+        "can we start again",
+        "let's start again",
+        "start again",
+        "reset",
+        "i want to restart"
+      ]
+    }
+  },
+  "entityTypes": {
+    "COMMANDS": {
+      "values": [
+        {"value": "load", "synonyms": ["open"]},
+        {"value": "create", "synonyms": ["add", "new", "build"]},
+        {"value": "read", "synonyms": ["say", "tell me"]},
+        {"value": "update", "synonyms": ["edit", "change", "set"]},
+        {"value": "delete", "synonyms": ["remove", "erase", "get rid of"]},
+        {"value": "unselect", "synonyms": ["clear focus"]},
+        {"value": "select", "synonyms": ["focus", "set focus"]}
+      ]
+    },
+    "MODELS": {
+      "values": [
+        {"value": "test", "synonyms": ["tester"]},
+        {"value": "door", "synonyms": ["doors", "doorman"]},
+        {"value": "book", "synonyms": ["book", "story"]},
+        {"value": "blog", "synonyms": ["post"]},
+        {"value": "song", "synonyms": ["lyrics"]},
+        {"value": "chatbot", "synonyms": ["bot", "conversation"]}
+      ]
+    }
+  },
+  "googleAssistant": {
+    "custom": {
+      "types": {
+        "FreeFormText": {
+          "allText": {}
+        }
+      }
+    }
+  }
+}
+
